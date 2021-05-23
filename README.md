@@ -1,17 +1,17 @@
 # Sentiment Analysis on 💎 GameStop 💎 Phenomenon
 
 ## Table of Contents
-* [1. Introduction](#1-introduction-1)
-* [2. Data Collection](#2-data-collection-1)
-* [3. Exploratory Data Analysis](#3-exploratory-data-analysis-1)
-* [3.1. '$GME' Stock Price Evolution from September 2020 to April 2021](#31-gme-stock-price-evolution-from-september-2020-to-april-2021-1)
-* [3.2. Exploratory Data Analysis from Twitter](#32-exploratory-data-analysis-from-twitter-1)
-* [3.3. Compare Twitter vs Stock Price](#33-compare-twitter-vs-stock-price-1)
-* [4. Modelling](#4-modelling-1)
-* [4.1. Predicting if the Stock Goes Up or Down](#41-predicting-if-the-stock-goes-up-or-down-1)
-* [4.2. Predicting How Many Replies a Quoted Tweet Will Have](#42-predicting-how-many-replies-a-quoted-tweet-will-have-1)
-* [5. Findings](#5-findings-1)
-* [6. Next Steps](#6-next-steps-1)
+* [1. Introduction](#1-introduction)
+* [2. Data Collection](#2-data-collection)
+* [3. Exploratory Data Analysis](#3-exploratory-data-analysis)
+* [3.1. '$GME' Stock Price Evolution from September 2020 to April 2021](#31-gme-stock-price-evolution-from-september-2020-to-april-2021)
+* [3.2. Exploratory Data Analysis from Twitter](#32-exploratory-data-analysis-from-twitter)
+* [3.3. Compare Twitter vs Stock Price](#33-compare-twitter-vs-stock-price)
+* [4. Modelling](#4-modelling)
+* [4.1. Predicting if the Stock Goes Up or Down](#41-predicting-if-the-stock-goes-up-or-down)
+* [4.2. Predicting How Many Replies a Quoted Tweet Will Have](#42-predicting-how-many-replies-a-quoted-tweet-will-have)
+* [5. Findings](#5-findings)
+* [6. Next Steps](#6-next-steps)
 
 ## 1. Introduction
 
