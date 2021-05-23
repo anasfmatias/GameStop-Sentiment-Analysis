@@ -1,18 +1,17 @@
 # Sentiment Analysis on 💎 GameStop 💎 Phenomenon
 
 ## Table of Contents
-> ### 1. Introduction
-> ### 2. Data Collection
-> ### 3. Exploratory Data Analysis
-> #### 3.1 '$GME' Stock Price Evolution from September 2020 to April 2021
-> #### 3.2 Exploratory Data Analysis from Twitter
-> #### 3.3 Compare Twitter vs Stock Price
-> ### 4. Modelling
-> #### 4.1. Predicting if the Stock Goes Up or Down
-> #### 4.2. Predicting How Many Replies a Quoted Tweet Will Have
-> ### 5. Findings
-> ### 6. Next Steps
-
+* [1. Introduction](#1-introduction-1)
+* [2. Data Collection](#2-data-collection-1)
+* [3. Exploratory Data Analysis](#3-exploratory-data-analysis-1)
+* [3.1. '$GME' Stock Price Evolution from September 2020 to April 2021](#31-gme-stock-price-evolution-from-september-2020-to-april-2021-1)
+* [3.2. Exploratory Data Analysis from Twitter](#32-exploratory-data-analysis-from-twitter-1)
+* [3.3. Compare Twitter vs Stock Price](#33-compare-twitter-vs-stock-price-1)
+* [4. Modelling](#4-modelling-1)
+* [4.1. Predicting if the Stock Goes Up or Down](#41-predicting-if-the-stock-goes-up-or-down-1)
+* [4.2. Predicting How Many Replies a Quoted Tweet Will Have](#42-predicting-how-many-replies-a-quoted-tweet-will-have-1)
+* [5. Findings](#5-findings-1)
+* [6. Next Steps](#6-next-steps-1)
 
 ## 1. Introduction
 
@@ -71,14 +70,14 @@ The text data was processed through a natural language processing pipeline to re
 The word cloud below shows the most common combinations of words used on the tweets. Interesting to have combinations like 'buy stock', 'wall street', 'hedge funds'
 <p align="center"><img src="images/word_count.png" width="800"></p>  
 
-### 3.3. Compare Twitter vs Stock price
+### 3.3. Compare Twitter vs Stock Price
 The chart below shows the evolution in the four different features: 'number of tweets', 'volume' of the stock, the stock price at  'close', stock price and 'Vader compound' that varies according to the sentiment score. The 'Vader compound' feature did not show any variation through time. Although, the number of tweets and stock volume or price had peaks occurring almost at the same time or within small intervals of difference.
 
 <p align="center"><img src="images/Comparisson_between_number_of_tweets_close_price_volume_and_vader_compound.png" width="800"></p>  
 
 
 ## 4. Modelling
-### 4.1. Predicting if the stock goes up or down
+### 4.1. Predicting if the Stock Goes Up or Down
 •__Choosing the algorithm__
 The features extracted from the Twitter data frame were resampled by day and used to predict the target. The target was a binary variable calculated based on the 'close' and 'open' stock price feature. When 'open' was higher than 'close', the variable would take a value of '0' and '1' vice versa.
 Based on supervised classification algorithms, the best model, chosen by the best cross-validation score, was used to predict the fluctuation price of the stock.
@@ -93,7 +92,7 @@ Below is the confusion matrix for training and test data. For training data, the
 The ROC curve shows the trade-off between sensitivity (or TPR) and specificity (1-FPR). Curve close to the top-left corner indicates the good performance of the classifier, as we can see for the training set, on the other hand, the test set reveals a curve coming closer to the 45-degree diagonal of the ROC space, with less accuracy.
 <p align="center"><img src="images/ROC_Precision_Recall.png" width="800"></p>
 
-### 4.2. Predicting how many replies a quoted tweet will have
+### 4.2. Predicting How Many Replies a Quoted Tweet Will Have
 •__Choosing the algorithm__
 Regression machine learning algorithms were used to predict how many replies a quoted tweet will have. The training and test data were selected from the original Twitter dataset, filtered by the quoted tweets. The target variable was 'reply_count', the number of replies.
 Different models were trained and tuned, and the chosen one was the model with the best cross-validation score. The best-performed model was the bagging regressor with a cross-validation score of 0.49, a train score of 0.81 and a test score of 0.48.
